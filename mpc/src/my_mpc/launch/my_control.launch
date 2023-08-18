@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<launch>
+  <master auto="start"/>
+
+     <node name="car_info_pub_node" pkg="my_lqr" type="car_info_pub_node" output="screen"  respawn="false">
+     </node>
+      <!--<node name="visual_point_node" pkg="my_lqr" type="visual_point_node" output="screen"  respawn="true">
+     </node>-->
+      <node name="my_global_path" pkg="my_mpc" type="path_generate.py" output="screen"  respawn="false">
+     </node>
+      
+</launch>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<launch>
+
+      <node name="car_controller" pkg="my_mpc" type="car_controller" output="screen"  respawn="false">
+        <param name="q" value = "20" type = "double"/> 
+        <param name="r" value = "100" type = "double"/>     
+        <param name="straight_vel" value = "0.5" type = "double"/>
+        <param name="arc_vel" value = "0.5" type = "double"/>
+        <param name="Np" value = "15" type = "int"/>
+     </node>
+
+</launch>
